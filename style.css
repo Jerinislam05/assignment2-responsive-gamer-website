@@ -283,10 +283,10 @@ footer p {
   font-weight: 700;
 }
 
-/* Mobile Device L - 425px */
-@media screen and (max-width: 425px) {
+/* Tablet - 768px */
+@media screen and (max-width: 768px) {
   .container {
-    width: 380px;
+    width: 700px;
     overflow: hidden;
   }
 
@@ -304,15 +304,15 @@ footer p {
 
   /* hero section */
   .hero img {
-    margin-top: 16px;
-    width: 350px;
+    margin-top: 18px;
+    width: 580px;
   }
   .hero > .container {
     flex-direction: column-reverse;
   }
   .hero .content {
     background-color: #fbf7fd;
-    padding: 30px;
+    padding: 60px 120px;
   }
   .hero .content h2 {
     text-align: center;
@@ -322,28 +322,34 @@ footer p {
   }
 
   /* 2nd section */
+  .gamer {
+    margin-top: 16px;
+  }
   .gamer-container.row {
     flex-direction: column;
   }
   .gamer img {
-    width: 350px;
+    width: 580px;
   }
   .gamer-content {
     text-align: center;
   }
+  p.gamer-p {
+    margin-left: 30px;
+  }
   h2.unleash {
-    font-size: 26px;
+    font-size: 28px;
     margin-top: 8px;
   }
 
   /* online games section */
   .online-section h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
   .online-txt p {
     margin: 0 auto;
     margin-top: 12px;
-    width: 250px;
+    width: 300px;
   }
   .online-img {
     flex-direction: column;
@@ -355,13 +361,16 @@ footer p {
     flex-direction: column-reverse;
     margin-top: 250px;
   }
+  .special-section .special-img-wrap {
+    margin-left: 60px;
+  }
   .special-section .big-img {
-    width: 350px;
+    width: 450px;
   }
   .special-section .small-img {
-    left: 280px;
-    bottom: 100px;
-    width: 100px;
+    left: 300px;
+    bottom: 200px;
+    width: 250px;
   }
   .special-section .special-content {
     text-align: center;
@@ -374,14 +383,14 @@ footer p {
 
   /* game category grid section */
   .grid-area {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
   }
   .icon-wrap {
     grid-column: span 1;
   }
   .icon-wrap.six {
-    grid-column: 2/3;
+    grid-column: 3/4;
   }
 
   /* footer */
@@ -400,5 +409,58 @@ footer p {
   }
   .social-icons {
     width: 250px;
+  }
+}
+
+/* Mobile Device L - 425px */
+@media screen and (max-width: 425px) {
+  .container {
+    width: 380px;
+  }
+
+  /* hero section */
+  .hero img {
+    width: 350px;
+  }
+
+  .hero .content {
+    padding: 30px;
+  }
+
+  /* 2nd section */
+  .gamer img {
+    width: 350px;
+  }
+  h2.unleash {
+    font-size: 22px;
+  }
+
+  /* online games section */
+  .online-section h2 {
+    font-size: 32px;
+  }
+  .online-txt p {
+    width: 250px;
+  }
+
+  /* online games part 2 */
+  .special-section .special-img-wrap {
+    margin-left: 0;
+  }
+  .special-section .big-img {
+    width: 350px;
+  }
+  .special-section .small-img {
+    left: 280px;
+    bottom: 100px;
+    width: 100px;
+  }
+
+  /* game category grid section */
+  .grid-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .icon-wrap.six {
+    grid-column: 2/3;
   }
 }
